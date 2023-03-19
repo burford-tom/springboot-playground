@@ -1,13 +1,13 @@
-package com.krzyford.extensiontest;
+package com.krzyford.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ExtensionTestApplication {
+public class ExampleTestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ExtensionTestApplication.class, args);
+		SpringApplication.run(ExampleTestApplication.class, args);
 	}
 
 }
