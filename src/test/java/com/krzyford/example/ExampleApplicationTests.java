@@ -1,10 +1,10 @@
-package com.krzyford.extensiontest;
+package com.krzyford.example;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ExtensionTestApplicationTests {
+class ExampleApplicationTests {
 
 	@Test
 	void contextLoads() {
