@@ -15,7 +15,12 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework:spring-jms:6.0.7'
+	implementation 'org.apache.activemq:activemq-client-jakarta:5.18.0'
+	
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.testcontainers:testcontainers:1.17.6'
+	testImplementation 'org.testcontainers:junit-jupiter:1.17.6'
 }
 
 test {
