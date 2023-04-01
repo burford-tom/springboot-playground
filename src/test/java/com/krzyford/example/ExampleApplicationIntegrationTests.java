@@ -24,12 +24,12 @@ public class ExampleApplicationIntegrationTests {
     void restTest() {
         List<Object> valueUnderTest = null;
 
-        Person saveResult = this.restTemplate.postForEntity("http://localhost:" + "8080" + "/persons", 
+        Person saveResult = this.restTemplate.postForEntity("http://localhost:" + "8090" + "/persons", 
             new Person("Steve", "Rogers"), 
             Person.class)
             .getBody();
 
-        Person[] rawResult = this.restTemplate.getForObject("http://localhost:" + "8080" + "/persons",
+        Person[] rawResult = this.restTemplate.getForObject("http://localhost:" + "8090" + "/persons",
             Person[].class);
 
         valueUnderTest = Arrays.asList(rawResult);
