@@ -15,7 +15,9 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-mail'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'com.icegreen:greenmail-junit5:2.0.0'
 }
 
 test {
