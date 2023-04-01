@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xml:lang="EN-US">
+    <head>
+        <title th:remove="all">Template for Hello World Email</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    </head>
+    <body>
+        <p>
+            Hello <span th:text="${NAME}">Unnamed Individual</span>,
+        </p>
+        <div th:if="${PERSONS.size() < 10}">
+            <p>Persons:</p>
+            <ul th:remove="all-but-first">
+                <li th:each="person : ${PERSONS}">
+                    <span th:text="${person.getFirstName()}"/>
+                    <span th:text="${person.getMiddleName()}"/>
+                    <span th:text="${person.getLastName()}"/>
+                </li>
+            </ul>
+        </div>
+        <p th:if="${PERSONS.size() >= 10}">
+            See attached list of Persons
+        </p>
+    </body>
+</html>
